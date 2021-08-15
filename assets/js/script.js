@@ -87,7 +87,23 @@ function generatePassword() {
   else if (upperCase) {
     selection = lettersUp;
   };
-  return selection;
+
+
+  var finalPassword = ""
+  //we need to add characters to finalPassword, "length" times.
+  //since, you know, "length" is the variable holding the string of some number (see line 28)
+
+  for(var i = 0; i < length; i++){
+    var newChar = "a"; //of course we're not supposed to just add "a"
+    // we want instead to add a random character from the selection string.
+    // I'll leave you to figure out what newChar is supposed to be.
+
+    console.log(newChar)
+    
+    finalPassword+=newChar;
+  }
+
+  return finalPassword 
 
   
 }
